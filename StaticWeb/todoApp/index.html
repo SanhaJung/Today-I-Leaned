@@ -106,36 +106,18 @@
         <!-- todo input-->
         <div class="inputBox shadow">
             <form>
-                <input type="text" placeholder="일정을 입력하세요"/>
-                <span class="addContainer">
+                <input id='input' type="text" placeholder="일정을 입력하세요"/>
+
+                <span id='button' type='button' class="addContainer">
                     <i aria-hidden="true" class="addBtn fa fa-plus"></i>
                 </span>
+
             </form>
         </div>
         <!-- todo list-->
         <section>
-            <ul>
-                <li class="shadow">
-                    <i aria-hidden="true" class="checkBtn fa fa-check"></i>
-                    일정1
-                    <span type="button" class="removeBtn">
-                        <i aria-hidden="true" class="fa fa-trash-o"></i>
-                    </span>
-                </li>
-                <li class="shadow">
-                    <i aria-hidden="true" class="checkBtn fa fa-check"></i>
-                    일정2
-                    <span type="button" class="removeBtn">
-                        <i aria-hidden="true" class="fa fa-trash-o"></i>
-                    </span>
-                </li>
-                <li class="shadow">
-                    <i aria-hidden="true" class="checkBtn fa fa-check"></i>
-                    일정3
-                    <span type="button" class="removeBtn">
-                        <i aria-hidden="true" class="fa fa-trash-o"></i>
-                    </span>
-                </li>
+            <ul id='list'>
+
             </ul>
         </section>
         <!-- clear all-->
@@ -143,4 +125,6 @@
             <span class="clearAllBtn">Clear All</span>
         </div>
     </body>
+    <script src='app.js'></script>
+
 </html>
