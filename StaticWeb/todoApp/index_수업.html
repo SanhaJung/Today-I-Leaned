@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"></link>
+        <title>일정관리</title>
+        <script>
+            let todos = [
+                // { todoNum: 1, 
+                //     title : "일정1"
+                // },{
+                //     todoNum:2, 
+                //     title : "일정2"
+                // }, {
+                //     todoNum:3, 
+                //     title : "일정3"
+                // },{
+                //     todoNum:4, 
+                //     title : "일정4"
+                // }, {
+                //     todoNum:5, 
+                //     title : "일정5"}
+                ];
+        </script>
+
+        <!-- defer를 빼줬음: 로드되는 시점이 함수가 다 로드되고 실행될 수 있도록 한 것임 -->
+        <script src="./js/todo.js"></script>
+        <style>
+            body {
+                text-align: center;
+                background-color: #f6f6f8;
+            }
+            h1{
+                color: #2f3b52;
+                font-weight: 900;
+                margin: 2.5rem 0 1.5rem;
+            }
+            .inputBox{
+                background: #fff;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 5px;
+            }
+            .inputBox input{
+                border-style: none;
+                font-size: .9rem;
+            }
+            .shadow{
+                box-shadow: 5px 10px 10px rgba(0,0,0,.03);
+            }
+
+            .addContainer{
+                float: right;
+                background: linear-gradient(90deg,#6478fb,#8763fb);
+                display: inline-block;
+                width: 3rem;
+                border-radius: 0 5px 5px 0;
+            }
+
+            .addBtn {
+                color: #fff;
+                vertical-align: middle;
+            }
+            .fa-plus:before {
+                content: "\f067";
+            }
+        </style>
+        <style>
+            ul{
+                list-style-type: none;
+                padding-left: 0;
+                margin-top: 0;
+                text-align: left;
+            }
+
+            li{
+                display: flex;
+                min-height: 50px;
+                height: 50px;
+                line-height: 50px;
+                margin: .5rem 0;
+                padding: 0 .9rem;
+                background: #fff;
+                border-radius: 5px;
+            }
+            .checkBtn {
+                line-height: 45px;
+                color: #62acde;
+                margin-right: 5px;
+            }
+            .removeBtn {
+                margin-left: auto;
+                color: #de4343;
+            }
+
+            .fa {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .fa-trash-o:before {
+                content: "\f014";
+            }
+        </style>
+        <style>
+            .clearAllBtn {
+                color: #e20303;
+                display: block;
+            }
+            .clearAllContainer{
+                width: 8.5rem;
+                height: 50px;
+                line-height: 50px;
+                background-color: #fff;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- title-->
+        <header>
+            <h1>TODO It!</h1>
+        </header>
+        <!-- todo input-->
+        <div class="inputBox shadow">
+            <form>
+                <input id="todoInput" type="text"  placeholder="일정을 입력하세요"/>
+                <span type="button" onClick="todoInputHandler()" class="addContainer">
+                    <i aria-hidden="true" class="addBtn fa fa-plus">
+                    </i>
+                </span>
+            </form>
+            
+        </div>
+        <!-- todo list-->
+        <section>
+            <ul id="todoList">
+                <script>
+                    displayList();
+                </script>
+
+             
+            </ul>
+        </section>
+        <!-- clear all-->
+        <div class="clearAllContainer">
+            <span type="button" class="clearAllBtn" onclick="todoClear()"> Clear All</span>
+        </div>
+    </body>
+</html>
