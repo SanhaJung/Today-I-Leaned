@@ -27,10 +27,18 @@
     * 코드에 대한 에러를 기록하고 공유하고 관리할 수 있는 프로그램
 * mockup tool(카카오 오븐)
   * 주요 화면설계
-  * [화면설계](https://ovenapp.io/)
+  * [화면설계](https://ovenapp.io/project/nD4CsWSDegFXDef5gYYINtoiAWFvZ8Hk#UXTuW)
 
 * 주말 계획
   * 화면설계 완료 및 구현
   * 데이터 모델링
   * 기능 설계
+
+#### 2021-01-10
+
+* 화면구현
+  * join
+  * sign in
+  * main
+* DB설계
 
