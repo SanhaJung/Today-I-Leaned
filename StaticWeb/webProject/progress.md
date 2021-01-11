@@ -43,10 +43,13 @@
 #### 2021-01-10
 
 * [화면로직 설계](https://ovenapp.io/project/nD4CsWSDegFXDef5gYYINtoiAWFvZ8Hk#UXTuW)
-* 화면구현
+* 화면구현(와이어 프레임 수준)
   * join
   * sign in
   * main
 * DB설계
 ----
 
+#### 2021-01-12
+
+* main화면 구현
