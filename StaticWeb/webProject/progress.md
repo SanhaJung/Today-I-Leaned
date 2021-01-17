@@ -63,7 +63,7 @@
   * **화면별 구현 현황**
     * details_outstanding_error
       * ~~python 코드블럭 보여주기~~
-      * **코드인식은 어떻게 하는거지?**
+      * **코드인식은 어떻게 하는거지?** --> [code-perttify](https://github.com/googlearchive/code-prettify) 적용해보기
     * details_resolved_error
     * join
     * login
