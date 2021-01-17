@@ -53,3 +53,21 @@
 #### 2021-01-12
 
 * main화면 구현
+
+---------------
+
+#### 2021-01-18
+
+* 화면구현(html, css) 
+  * 필요한 소스 수집 완료
+  * **화면별 구현 현황**
+    * details_outstanding_error
+      * ~~python 코드블럭 보여주기~~
+      * **코드인식은 어떻게 하는거지?**
+    * details_resolved_error
+    * join
+    * login
+    * ~~main~~
+    * ~~my_page~~
+    * resolve_error
+    * ~~logging_error~~
