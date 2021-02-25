@@ -18,3 +18,15 @@ logs 명령어의 사용법: `kubectl logs --help`
 * `kubectl get nodes -o wide`
 * `kubectl describe node <노드이름>`
 
+
+
+## 리소스 정보(Documentation) 출력
+
+* `kubectl explane [오브젝트명]`
+
+
+
+## 파일 편집
+
+* `cat > [파일명]`
+* Ctrl + D 눌러서 저장 및 종료

@@ -1,0 +1,1 @@
+# 유튜브 [][따배쿠] [[따베쿠] 쿠버네티스 시리즈 ](https://www.youtube.com/watch?v=6n5obRKsCRQ&list=PLApuRlvrZKohaBHvXAOhUD-RxD0uQ3z0c) 강의를 듣고 정리한 내용입니다.
